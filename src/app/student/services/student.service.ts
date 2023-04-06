@@ -10,7 +10,7 @@ export class StudentService {
 
   constructor(private http: HttpClient) { }
 
-  studentUrl = 'http://localhost:8080/students';
+  studentUrl = 'api/students';
 
   public getStudents(): Observable<Student[]>{
     // Added responseType: text, because for demo purpose I am just sending plain "Hello, World" text from the backend
